@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Misión Conectando Emociones</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#22304A;--card:#fff;--line:#BFD9F2;--sky1:#7CCBFF;--sky2:#D6EFFF;--g1:#9BE29B;--g2:#58B85E;--ok:#DFF6E8;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#F2F5FB;--card:#26355A;--line:#44588A;--sky1:#1B2B55;--sky2:#34508C;--g1:#2C7A55;--g2:#1F5B40;--ok:#1F4A35;color-scheme:dark}}
+:root[data-theme="dark"]{--ink:#F2F5FB;--card:#26355A;--line:#44588A;--sky1:#1B2B55;--sky2:#34508C;--g1:#2C7A55;--g2:#1F5B40;--ok:#1F4A35;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font:700 20px/1.3 "Baloo 2","Comic Sans MS","Trebuchet MS",system-ui,sans-serif;color:var(--ink);background:linear-gradient(var(--sky1),var(--sky2) 42%,var(--g1) 42%,var(--g2)) fixed;min-height:100vh}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--sky1);z-index:20}
+.w{max-width:1000px;margin:0 auto;padding:10px 14px 26px}
+.tb{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;background:var(--card);border:3px solid var(--line);border-radius:20px;padding:8px 12px;margin-bottom:12px}
+.tb button,.b2{font:inherit;font-size:16px;font-weight:800;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:14px;padding:8px 12px;min-height:44px;cursor:pointer}
+.tb label{font-size:16px}.tb input{width:90px;vertical-align:middle}
+.stz{font-size:22px}
+.card{max-width:680px;margin:0 auto;background:var(--card);border:4px solid var(--line);border-radius:30px;padding:18px;text-align:center;box-shadow:0 10px 0 rgba(0,0,0,.12)}
+.card.m{max-width:none;padding:12px}
+h1{font-size:34px;line-height:1.1;margin:6px 0}h2{font-size:26px;margin:4px 0}p{margin:8px 0}
+.sm{font-size:16px;opacity:.85}
+.big{font-size:80px;line-height:1.1}
+.row{display:flex;align-items:center;gap:12px;text-align:left}
+.col{position:relative;font-size:76px;line-height:1;animation:bob 3s ease-in-out infinite;flex:none}
+.col.l{font-size:120px;display:inline-block}
+.fc{position:absolute;right:-14px;bottom:-4px;font-size:30px}
+.bub2{flex:1;background:var(--card);border:4px solid var(--c,#7B4FD0);border-radius:24px;padding:10px 14px;font-size:22px}
+.opts{display:grid;gap:12px;margin:14px 0}
+.b{font:inherit;font-weight:800;font-size:22px;color:#fff;border:0;border-bottom:7px solid rgba(0,0,0,.28);border-radius:24px;padding:14px 18px;min-height:66px;cursor:pointer;background:linear-gradient(rgba(255,255,255,.28),rgba(255,255,255,0) 55%),var(--bg,#2F80ED);box-shadow:0 8px 14px rgba(0,0,0,.2),inset 0 3px 0 rgba(255,255,255,.4);margin:4px}
+.b:active{transform:translateY(4px);border-bottom-width:3px}
+.b:disabled{opacity:.4;cursor:default}
+.c0{--bg:#E5484D}.c1{--bg:#E8A400;color:#22304A}.c2{--bg:#2FA866}.d0{--bg:#2F80ED}.d1{--bg:#8B5CF6}.d2{--bg:#E0699A}.g{--bg:#2FA866}.p{--bg:#8B5CF6}
+.hl{animation:pu 1s infinite}
+.ov{position:fixed;inset:0;background:rgba(10,20,50,.55);display:flex;align-items:center;justify-content:center;padding:16px;z-index:30}
+.md{background:var(--card);border:5px solid #F5B731;border-radius:30px;padding:20px;max-width:460px;width:100%;text-align:center}
+.mh{font-size:26px;font-weight:800}
+.tt{min-height:30px;font-size:19px;margin-top:8px}
+input[type=text]{font:inherit;font-size:24px;padding:10px 14px;border-radius:16px;border:3px solid var(--line);background:var(--card);color:var(--ink);width:100%;max-width:340px;text-align:center}
+.dp0{border:8px double #F5B731;border-radius:24px;padding:16px;margin:10px 0}
+:focus-visible{outline:4px solid #8B5CF6;outline-offset:3px}
+@keyframes bob{50%{transform:translateY(-6px) rotate(-2deg)}}
+@keyframes pu{50%{transform:scale(1.06)}}
+.mp2{container-type:inline-size;position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;border:5px solid #F5B731;background:linear-gradient(#7CCBFF 0,#CDEBFF 38%,#8EDB8E 38%,#58B85E 100%)}
+.rd{position:absolute;inset:0;width:100%;height:100%}
+.rd path{fill:none;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.rb{stroke:#C98F4B;stroke-width:44px}.rs{stroke:#F6D39A;stroke-width:34px}.rl{stroke:#fff;stroke-width:3px;stroke-dasharray:14 12}
+.rp,.dpp{display:none}
+.dc{position:absolute;font-size:6cqw;line-height:1;pointer-events:none}
+.mas{position:absolute;left:1.5%;top:5%;font-size:12cqw;line-height:1;pointer-events:none;animation:bob 3s ease-in-out infinite}
+.nd{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);width:18cqw;background:none;border:0;padding:0;font:inherit;color:#22304A;cursor:pointer;display:flex;flex-direction:column;align-items:center;text-align:center}
+.nd .tg{background:var(--c);color:#fff;font-weight:800;font-size:1.7cqw;padding:.2cqw 1.4cqw;border-radius:2cqw;border:.35cqw solid #fff}
+.nd .ti{background:#fff;font-weight:800;font-size:1.9cqw;line-height:1.1;padding:.7cqw 1.2cqw;border-radius:2cqw;border:.5cqw solid var(--c);margin-top:-.3cqw;box-shadow:0 .5cqw 0 rgba(0,0,0,.2)}
+.nd .ic{font-size:6.5cqw;line-height:1;margin-top:.3cqw}
+.nd .bd{position:absolute;top:-1cqw;right:1cqw;font-size:3cqw}
+.nd.cur .ti{box-shadow:0 0 0 1cqw rgba(255,214,0,.85),0 .5cqw 0 rgba(0,0,0,.2);animation:pu 1.4s infinite}
+.nd.lock{filter:grayscale(.85);opacity:.75}
+@media (max-width:700px){.mp2{aspect-ratio:3/4.9}.rl1,.dl{display:none}.rp,.dpp{display:block}.nd{left:var(--xp);top:var(--yp);width:38cqw}.nd .tg{font-size:3.6cqw}.nd .ti{font-size:4cqw;padding:1.2cqw 2cqw;border-radius:3cqw}.nd .ic{font-size:11cqw}.nd .bd{font-size:6cqw}.dc{font-size:9cqw}.mas{left:auto;right:3%;top:auto;bottom:2%;font-size:17cqw}.rb{stroke-width:30px}.rs{stroke-width:22px}.rl{stroke-width:2px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="w">
+ <header class="tb">
+  <div class="stz" id="stz"></div>
+  <div><button id="rp">🔊 Escuchar otra vez</button> <button id="pz">⏸ Pausa</button> <label>Volumen <input type="range" id="vl" min="0" max="1" step=".1" value=".9" aria-label="Volumen de la voz"></label></div>
+ </header>
+ <main id="main"><div class="card">Colorín está preparando la aventura…</div></main>
+</div>
+<script>
+"use strict";
+const $=s=>document.querySelector(s),M=$("#main");
+const KEY="mce_v2",esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let S={st:[0,0,0,0,0],name:"",seen:0};
+try{const r=JSON.parse(localStorage.getItem(KEY));if(r&&Array.isArray(r.st))S=r}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const nst=()=>S.st.filter(Boolean).length;
+
+/* ---------- Audio: usa archivos mp3 si existen; si no, la voz del dispositivo ---------- */
+const AUDIO_BASE=""; /* poner aquí la carpeta de los audios grabados, por ejemplo "audio/" */
+const VP={1:[1,1.15],2:[.92,1.05],3:[.95,1.15],4:[.85,1.05],5:[1.05,1.25],6:[.8,.95],7:[.82,1]};
+const FACE={1:"😊",2:"🙂",3:"🤔",4:"🙂",5:"🎉",6:"😢",7:"😌"};
+let vol=.9,last=null,au=null,paused=false,voz=null;
+function pickVoice(){if(!("speechSynthesis" in window))return;const sc=x=>(/CO/i.test(x.lang)?4:/MX|US|419/i.test(x.lang)?2:0)+(/natural|neural|online|google/i.test(x.name)?3:0);const v=speechSynthesis.getVoices().filter(x=>/^es/i.test(x.lang)).sort((a,b)=>sc(b)-sc(a));voz=v[0]||null}
+pickVoice();if("speechSynthesis" in window)speechSynthesis.onvoiceschanged=pickVoice;
+function stop(){try{speechSynthesis.cancel()}catch(e){}if(au){au.pause();au=null}paused=false;$("#pz").textContent="⏸ Pausa"}
+function say(t,v=3,id){last=[t,v,id];stop();const f=$("#fc");if(f)f.textContent=FACE[v]||"🙂";
+ const tts=()=>{if(!("speechSynthesis" in window))return toast("No pudimos poner la voz. Toca «Escuchar otra vez».");const u=new SpeechSynthesisUtterance(t);u.lang=voz?voz.lang:"es-CO";if(voz)u.voice=voz;u.rate=VP[v][0];u.pitch=VP[v][1];u.volume=vol;speechSynthesis.speak(u)};
+ if(AUDIO_BASE&&id){const a=new Audio(AUDIO_BASE+id+".mp3");a.volume=vol;au=a;a.onerror=()=>{au=null;tts()};a.play().catch(()=>{au=null;tts()})}else tts()}
+function toast(m){const t=$("#tt");if(t)t.textContent=m}
+$("#rp").onclick=()=>{if(last)say(...last)};
+$("#pz").onclick=()=>{try{if(au){paused?au.play():au.pause()}else{paused?speechSynthesis.resume():speechSynthesis.pause()}paused=!paused;$("#pz").textContent=paused?"▶ Seguir":"⏸ Pausa"}catch(e){}};
+$("#vl").oninput=e=>{vol=+e.target.value;if(au)au.volume=vol};
+const updS=()=>{const n=nst(),s=$("#stz");s.textContent="⭐".repeat(n)+"☆".repeat(5-n)+" "+n+" de 5";s.setAttribute("aria-label","Estrellas ganadas: "+n+" de 5")};
+
+/* ---------- Utilidades de interfaz ---------- */
+const show=h=>{M.innerHTML=h;window.scrollTo(0,0)};
+const col=(v=1,c="")=>`<div class="col ${c}" aria-hidden="true">🦜<span class="fc" id="fc">${FACE[v]}</span></div>`;
+function mod(o){say(o.say||o.t,o.v||5);const d=document.createElement("div");d.className="ov";
+ d.innerHTML=`<div class="md" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="big" aria-hidden="true">${o.i||""}</div><div class="mh" id="mt">${o.t}</div>${o.s?`<p>${o.s}</p>`:""}<div id="mb"></div></div>`;
+ o.btn.forEach(x=>{const b=document.createElement("button");b.className="b "+(x.c||"g");b.textContent=x.l;b.onclick=()=>{d.remove();x.f&&x.f()};d.querySelector("#mb").appendChild(b)});
+ document.body.appendChild(d);d.querySelector("button").focus()}
+const PR=["¡Muy bien!","¡Eso es!","¡Lo lograste!","¡Qué bien lo hiciste!","¡Excelente!"];let lp=-1;
+const praise=fin=>{if(fin)return PR[2];let i;do{i=Math.floor(Math.random()*PR.length)}while(i===lp);lp=i;return PR[i]};
+const wire=(id,f)=>{const e=$(id);if(e)e.onclick=f};
+
+/* ---------- Contenidos pedagógicos ---------- */
+const SEM=["🛑 Rojo: me detengo","🤔 Amarillo: pienso","😊 Verde: estoy bien"],PM=["💛 Gracias","🙏 Por favor","🤝 Perdón"];
+const X=(e,q,o,a,h,f,v)=>({e,v,f,s:[{q,o,a,h}]});
+const LV=[
+{n:"El semáforo de las emociones",ic:"🚦",c:"#7B4FD0",w:"¿Cómo sabemos si alguien está feliz, triste o enojado? Ayúdame a poner cada situación en su color.",fin:"Ya sabes qué dice el semáforo de tus emociones.",r:[
+ X("😠","Me quitaron mi juguete y siento mucha rabia.",SEM,0,"Con mucha rabia, el semáforo está en rojo. Nos detenemos.","Con rabia, nos detenemos.",3),
+ X("🤔","No sé si ir a la fiesta. Voy a pensar.",SEM,1,"Cuando dudamos, el semáforo está en amarillo. Pensamos.","Al dudar, pensamos.",3),
+ X("🤗","Mi amigo me dio un abrazo y estoy feliz.",SEM,2,"Cuando estamos contentos y tranquilos, va en verde.","Con alegría, vamos en verde.",3)]},
+{n:"La caja de las palabras mágicas",ic:"🎁",c:"#2F80ED",w:"Hay palabras mágicas que hacen sentir bien a los demás. Abre la caja y elige la que va en cada escena.",fin:"Ya conoces las palabras mágicas.",r:[
+ X("✏️","Tu amiga te prestó su lápiz. ¿Qué dices?",PM,0,"Cuando alguien nos ayuda, decimos gracias.","Gracias es una palabra mágica.",3),
+ X("⚽","Quieres que te pasen el balón. ¿Qué dices?",PM,1,"Cuando pedimos algo, decimos por favor.","Por favor abre puertas.",3),
+ X("😬","Pisaste sin querer a un compañero. ¿Qué dices?",PM,2,"Cuando nos equivocamos, decimos perdón.","Perdón cuida corazones.",3)]},
+{n:"El cuento de Colorín",ic:"📖",c:"#3BA55D",w:"Te voy a contar mi cuento. Escucha con atención, porque después te preguntaré cómo me sentí.",fin:"Ya entiendes cómo se siente Colorín.",r:[
+ X("🦜","Encontré mi juguete favorito roto. Me quedé callado y me salieron lágrimas. ¿Cómo me sentí?",["😢 Triste","😄 Alegre","😠 Enojado"],0,"Cuando algo que queremos se rompe, nos sentimos tristes.","Así es: me sentí triste.",6),
+ X("🐢","Mi amiga la tortuga me dio un abrazo y me ayudó a arreglarlo. Sonreí. ¿Cómo me sentí?",["😢 Triste","😄 Alegre","😨 Asustado"],1,"Un abrazo y una amiga que ayuda nos ponen alegres.","Así es: me sentí alegre.",5),
+ X("⛈️","De pronto sonó un trueno muy fuerte y me escondí, temblando. ¿Cómo me sentí?",["😌 Tranquilo","😨 Asustado","😄 Alegre"],1,"Un ruido muy fuerte nos puede dar miedo. Y está bien sentirlo.","Así es: me asusté, pero ya pasó.",7)]},
+{n:"El cofre de las emociones",ic:"🧰",c:"#F28C28",w:"Mira, ¡un cofre misterioso! Tiene cartas con emociones. Reconócelas y elige qué hacer para sentirte mejor.",fin:"Ya sabes qué hacer cuando sientes algo fuerte.",r:[
+ {e:"😢",v:6,f:"Pedir un abrazo ayuda mucho.",s:[{q:"Carta 1: ¿qué emoción es?",o:["😢 Tristeza","😠 Enojo","😲 Sorpresa"],a:0,h:"La carita con lágrimas es tristeza."},{q:"¿Qué haces para sentirte mejor?",o:["🤗 Pedir un abrazo","💢 Gritar y empujar","🤐 Quedarme solo y callado"],a:0,h:"Un abrazo y contar lo que sentimos ayuda mucho."}]},
+ {e:"😠",v:4,f:"Respirar profundo nos calma.",s:[{q:"Carta 2: ¿qué emoción es?",o:["😢 Tristeza","😠 Enojo","😄 Alegría"],a:1,h:"El ceño fruncido muestra enojo."},{q:"¿Qué haces para sentirte mejor?",o:["👊 Pegarle a alguien","🌬️ Respirar profundo y contar hasta 5","💥 Romper mis cosas"],a:1,h:"Respirar profundo nos ayuda a calmarnos."}]},
+ {e:"😨",v:7,f:"Un adulto de confianza nos cuida.",s:[{q:"Carta 3: ¿qué emoción es?",o:["😨 Miedo","😄 Alegría","😌 Calma"],a:0,h:"Los ojos muy abiertos y temblar muestran miedo."},{q:"¿Qué haces para sentirte mejor?",o:["🙈 Esconder lo que siento","🧑‍🏫 Decirle a un adulto de confianza","🏃 Salir corriendo solo"],a:1,h:"Un adulto de confianza nos hace sentir seguros."}]}]}
+];
+const WEB=[["🎨","Compartir mis materiales",1],["📢","Gritarle a un compañero",0],["🤝","Ayudar a quien lo necesita",1],["😝","Burlarme de alguien",0],["👂","Escuchar con atención",1],["🎈","Invitar a jugar a todos",1]];
+
+/* ---------- Pantallas ---------- */
+function home(){const has=nst()>0;
+ show(`<div class="card">${col(1,"l")}<h1>Misión Conectando Emociones</h1><p>Hola, soy Colorín. ¿Me ayudas a encontrar los tesoros de las emociones?</p>${has?`<button class="b g" id="s1">Seguir mi aventura</button><button class="b2" id="s2">Empezar de nuevo</button>`:`<button class="b g" id="s1">¡Empezar!</button>`}</div>`);
+ say("Hola, soy Colorín. ¿Me ayudas a encontrar los tesoros de las emociones?",1);
+ wire("#s1",has?map:how);
+ wire("#s2",()=>mod({i:"🔄",t:"¿Empezar de nuevo?",s:"Se borrarán las estrellas ganadas. Esto no se puede deshacer.",say:"¿Empezar de nuevo? Se borrarán las estrellas ganadas.",v:2,btn:[{l:"Sí, empezar de nuevo",c:"c0",f:()=>{S={st:[0,0,0,0,0],name:"",seen:0};save();updS();home()}},{l:"No, seguir mi aventura",f:()=>{}}]}));}
+function how(){S.seen=1;save();const t="Toca lo que te guste, escucha con atención y gana estrellas. Si te equivocas, ¡no pasa nada! Lo intentamos otra vez.";
+ show(`<div class="card">${col(2)}<h1>Toca. Escucha. Gana estrellas.</h1><p>${t}</p><button class="b g" id="s1">Jugar</button></div>`);say(t,2);wire("#s1",map)}
+
+const PL=[[30,72],[62,70],[40,34],[66,22],[89,28],[86,58]],PP=[[30,86],[70,72],[30,56],[70,40],[30,24],[70,9]],CL=["#7B4FD0","#2F80ED","#3BA55D","#F28C28","#D9A000","#D9A000"];
+const R1="M8 92 C14 78 20 72 30 72 C44 74 50 70 62 70 C82 68 80 50 60 48 C40 46 32 42 40 34 C48 24 56 22 66 22 C76 22 82 28 89 28 C98 28 96 52 86 58",R2="M62 99 C40 100 40 88 30 86 C48 84 70 84 70 72 C70 60 30 66 30 56 C30 46 70 52 70 40 C70 30 30 36 30 24 C30 14 70 20 70 9";
+const rd=(c,d)=>`<svg class="rd ${c}" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="rb" d="${d}"/><path class="rs" d="${d}"/><path class="rl" d="${d}"/></svg>`;
+const dc=(e,x,y,c)=>`<span class="dc ${c}" style="left:${x}%;top:${y}%" aria-hidden="true">${e}</span>`;
+function map(){const lv=S.st.slice(0,4).findIndex(x=>!x),n=nst();
+ const stt=i=>i<4?(S.st[i]?"done":i===lv?"cur":"lock"):i===4?(S.st[4]?"done":lv<0?"cur":"lock"):(S.st[4]?"cur":"lock");
+ const nh=i=>{const s=stt(i),m=i>3,nm=i<4?LV[i].n:i===4?"El cofre y la telaraña":"Meta",tg=i<4?"Nivel "+(i+1):i===4?"¡Final!":"¡Llegaste!",ic=i<4?(s==="lock"?"🔒":LV[i].ic):i===4?(S.st[4]?"💎":"🧰"):"🏆";
+  return `<button class="nd ${s}" data-i="${i}" style="--c:${CL[i]};--x:${PL[i][0]}%;--y:${PL[i][1]}%;--xp:${PP[i][0]}%;--yp:${PP[i][1]}%" aria-label="${(i<4?"Nivel "+(i+1)+": ":"")+nm}${s==="lock"?" (bloqueado)":""}"><span class="tg">${tg}</span><span class="ti">${nm}</span><span class="ic" aria-hidden="true">${ic}</span>${s==="done"?'<span class="bd" aria-hidden="true">⭐</span>':""}</button>`};
+ const ins=lv>=0?"Toca el nivel que brilla.":!S.st[4]?"Toca el cofre.":"Toca la meta.";
+ show(`<div class="card m"><h2>Mapa de la aventura</h2><p class="sm" style="margin-top:0">Llevas ${n} de 5 estrellas. ${ins}</p><div class="mp2" role="group" aria-label="Mapa de la aventura">${rd("rl1",R1)+rd("rp",R2)}${dc("☁️",44,3,"")}${dc("☁️",80,6,"dl")}${dc("🌳",2,40,"dl")}${dc("🌳",93,84,"dl")}${dc("🌸",12,52,"dl")}${dc("🌼",50,90,"dl")}${dc("🌳",3,66,"dpp")}${dc("🌳",90,48,"dpp")}${dc("🌼",86,24,"dpp")}<span class="mas" aria-hidden="true">🦜</span>${[0,1,2,3,4,5].map(nh).join("")}</div><div class="tt" id="tt" role="status"></div></div>`);
+ say(ins,lv<0&&!S.st[4]?1:2);
+ document.querySelectorAll(".nd").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;
+  if(i<4){S.st[i]||i===lv?intro(i):(toast("Primero termina el nivel anterior."),say("Primero termina el nivel anterior.",2))}
+  else if(i===4){if(S.st[4])toast("¡El cofre ya está abierto!");else if(lv<0)mod({i:"🧰",t:"¡Listo! Para abrir el cofre, tejamos la telaraña de la amistad.",v:1,btn:[{l:"Jugar",f:web}]});else{toast("El cofre se abre al final de la aventura.");say("El cofre se abre al final de la aventura.",2)}}
+  else{if(S.st[4])casa();else{toast("Primero termina la aventura.");say("Primero termina la aventura.",2)}}})}
+
+function intro(l){const L=LV[l];show(`<div class="card" style="--c:${L.c}"><p class="sm">Nivel ${l+1} de 4</p><div class="big" aria-hidden="true">${L.ic}</div><h2>${L.n}</h2><div class="row">${col(1)}<div class="bub2">${L.w}</div></div><button class="b g" id="s1">Jugar</button><button class="b2" id="s2">🗺️ Volver al mapa</button></div>`);
+ say(L.w,1,`n${l+1}_bienvenida`);wire("#s1",()=>reto(l,0));wire("#s2",map)}
+
+function reto(l,i){const L=LV[l],R=L.r[i];let k=0;
+ const draw=()=>{const P=R.s[k];let t=0;
+  show(`<div class="card" style="--c:${L.c}"><div style="text-align:left"><button class="b2" id="vm">🗺️ Volver al mapa</button></div><div class="row">${col(R.v||3)}<div class="bub2">${P.q}</div></div><div class="big" aria-hidden="true">${R.e}</div><div class="opts" id="op">${P.o.map((o,j)=>`<button class="b ${l===0?"c"+j:"d"+j}" data-j="${j}">${o}</button>`).join("")}</div><button class="b2" id="ph">💡 Pista</button></div>`);
+  say(P.q,R.v||3,`n${l+1}r${i+1}_${k+1}`);wire("#vm",map);wire("#ph",()=>mod({i:"💡",t:P.h,v:4,btn:[{l:"Seguir jugando"}]}));
+  const op=[...document.querySelectorAll("#op .b")];
+  const good=()=>{const lastS=k===R.s.length-1,p=praise(lastS&&i===L.r.length-1);
+   mod({i:"⭐",t:p,s:lastS?R.f:"",say:p+(lastS?" "+R.f:""),v:5,btn:[{l:"Seguir",f:()=>{if(!lastS){k++;draw()}else if(i<L.r.length-1)reto(l,i+1);else done(l)}}]})};
+  op.forEach(b=>b.onclick=()=>{const j=+b.dataset.j;if(j===P.a)return good();t++;b.disabled=true;
+   if(t===1)mod({i:"🤔",t:"Casi. "+P.h+" Inténtalo otra vez.",v:4,btn:[{l:"Inténtalo otra vez"}]});
+   else if(t===2){op[P.a].classList.add("hl");mod({i:"👉",t:"Mira aquí conmigo. ¿Qué crees?",v:4,btn:[{l:"Inténtalo otra vez"}]})}
+   else{op.forEach(x=>x.disabled=true);op[P.a].classList.add("hl");mod({i:"🤝",t:"Vamos juntos. Mira esta: "+P.o[P.a].replace(/^[^\p{L}]+/u,"")+".",v:4,btn:[{l:"Seguir",f:good}]})}})};
+ draw()}
+
+function done(l){S.st[l]=1;save();updS();const L=LV[l],n=nst(),s=`${L.fin} ¡Ganaste una estrella! Llevas ${n} de 5.`;
+ mod({i:"⭐",t:`¡Nivel ${l+1} completo!`,s,say:`¡Nivel ${l+1} completo! ${s}`,v:5,btn:[{l:"Volver al mapa",f:map}]})}
+
+function web(){let n=0;const svg=()=>{const p=[[30,20],[170,20],[30,100],[170,100]];return `<svg viewBox="0 0 200 120" width="280" role="img" aria-label="Telaraña con ${n} hilos"><circle cx="100" cy="60" r="8" fill="#8B5CF6"/>${p.map((q,k)=>`<circle cx="${q[0]}" cy="${q[1]}" r="8" fill="${k<n?"#2FA866":"#BFD9F2"}"/>${k<n?`<line x1="100" y1="60" x2="${q[0]}" y2="${q[1]}" stroke="#2FA866" stroke-width="4"/>`:""}`).join("")}${n>3?'<polygon points="30,20 170,20 170,100 30,100" fill="none" stroke="#2FA866" stroke-width="3"/>':""}</svg>`};
+ show(`<div class="card" style="--c:#2FA866"><div class="row">${col(2)}<div class="bub2">Toca las 4 acciones amables.</div></div><div id="wb">${svg()}</div><div class="mh" id="wc">Hilos: 0 de 4</div><div class="opts" id="op">${WEB.map((w,j)=>`<button class="b d0" data-j="${j}"><span aria-hidden="true">${w[0]}</span> ${w[1]}</button>`).join("")}</div><div class="tt" id="tt" role="status"></div></div>`);
+ say("¡Tenemos las cuatro estrellas! Toca las cuatro acciones amables.",2);
+ document.querySelectorAll("#op .b").forEach(b=>b.onclick=()=>{const w=WEB[+b.dataset.j];b.disabled=true;
+  if(w[2]){n++;b.className="b g";$("#wb").innerHTML=svg();$("#wc").textContent="Hilos: "+n+" de 4";
+   if(n<4){toast("¡Eso une al grupo!");say("¡Eso une al grupo!",5)}
+   else{S.st[4]=1;save();updS();mod({i:"💎",t:"¡Tejimos la telaraña! ¡Mira, el cofre se abre!",s:"¡Ganaste la estrella especial! ¡Completaste toda la aventura!",v:5,btn:[{l:"Ver el reto en casa",f:casa}]})}}
+  else mod({i:"🤔",t:"Casi. Eso no ayuda a tus amigos. Busca una acción amable.",v:4,btn:[{l:"Inténtalo otra vez"}]})})}
+
+function casa(){const t="Hoy, cuéntale a mamá, papá o a quien te cuida cómo te sentiste. Pregúntale cómo se sintió. Después dibujen juntos esa emoción.";
+ show(`<div class="card"><div class="big" aria-hidden="true">🏠</div><h1>Reto en casa</h1><div class="row">${col(2)}<div class="bub2">${t}</div></div><p class="sm">Hablar de lo que sentimos en casa fortalece lo que aprenden en la escuela.</p><button class="b p" id="s1">Recibir mi diploma</button></div>`);say(t,2);wire("#s1",dip)}
+function dip(){show(`<div class="card"><div class="big" aria-hidden="true">🏅</div><h2>¿Cómo te llamas?</h2><label for="nm" class="sm">Escribe tu nombre</label><br><input type="text" id="nm" maxlength="30" autocomplete="off" value="${esc(S.name)}"><div class="tt" id="tt" role="status"></div><button class="b p" id="s1">Crear mi diploma</button></div>`);say("¿Cómo te llamas?",3);
+ wire("#s1",()=>{const n=$("#nm").value.trim();if(!n){const m="Escribe tu nombre para tu diploma. Un adulto puede ayudarte.";toast(m);say(m,4);return}S.name=n;save();diploma()})}
+function diploma(){const t=`¡Felicitaciones, ${S.name}! Eres un Guardián de las emociones.`;
+ show(`<div class="card"><div class="dp0"><div class="big" aria-hidden="true">🏆</div><h2>Diploma de Guardián de las emociones</h2><p>Para</p><h1>${esc(S.name)}</h1><p>Reconoce sus emociones, usa palabras mágicas y cuida a sus amigos.</p><div class="stz" aria-hidden="true">⭐⭐⭐⭐⭐</div></div><button class="b g" id="s1">Guardar mi diploma</button><button class="b2" id="s2">Jugar otra vez</button></div>`);say(t,5);
+ wire("#s1",()=>{try{window.print()}catch(e){}});wire("#s2",()=>{S.st=[0,0,0,0,0];save();updS();home()})}
+
+updS();home();
+</script>
+</body>
+</html>
